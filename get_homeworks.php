@@ -16,7 +16,7 @@ if (!isset($_GET['class'])) {
         }
 
         $r_json = json_encode($r);
-        $ret_json = '{"result":"ok","images":' . $r_json . '}';
+        $ret_json = '{"result":"ok","homeworks":' . $r_json . '}';
         echo $ret_json;
     } else {
         echo '{"result":"not_ok"}';
