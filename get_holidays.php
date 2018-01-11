@@ -9,7 +9,7 @@ if (mysql_num_rows($run) > 0) {
         $r[] = $row;
     }
     $r_json = json_encode($r);
-    $ret_json .= '{"result":"ok","holidays":' . $r_json . '}';
+    $ret_json = '{"result":"ok","holidays":' . $r_json . '}';
     echo $ret_json;
 
 } else {
