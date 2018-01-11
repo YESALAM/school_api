@@ -5,7 +5,7 @@ if (!isset($_GET['s_no'])) {
     echo '{"result":"no_srn"}';
 } else {
     $s_no = $_GET['s_no'];
-    $que = "select * from fees_student_fee_add where s_no='$s_no'";
+    $que = "select * from fees_student_fee_add where s_no=$s_no";
     $run = mysql_query($que);
     if (mysql_num_rows($run) > 0) {
         $r = array();
