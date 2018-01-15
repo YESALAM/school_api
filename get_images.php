@@ -1,5 +1,5 @@
 <?php
-include_once("../../connection/connect.php");
+include("connect.php");
 
 if (!isset($_GET['id'])) {
     echo '{"result":"no_id"}';

@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: application/json; charset=UTF-8");
-include_once("../../connection/connect.php");
+include("connect.php");
 if (!isset($_GET['s_no'])) {
     echo '{"result":"no_srn"}';
 } else {

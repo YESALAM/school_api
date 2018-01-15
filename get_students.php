@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: application/json; charset=UTF-8");
-include_once("../../connection/connect.php");
+include("connect.php");
 
 $que = "SELECT * FROM `student_admission_info` where student_status = 'Active'";
 $run = mysql_query($que);
