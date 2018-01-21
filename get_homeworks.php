@@ -11,7 +11,7 @@ if (!isset($_GET['class'])) {
     $run = mysql_query($que) or die(mysql_error());
     if (mysql_num_rows($run) > 0) {
         $r = array();
-        while ($row = mysql_fetch_array($run)) {
+        while ($row = mysql_fetch_assoc($run)) {
             $r[] = $row;
         }
 

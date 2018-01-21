@@ -1,7 +1,9 @@
 <?php
 $server = $_SERVER['HTTP_HOST'];
-$cmp = strcmp($server, "192.168.1.100");
-if ($cmp == 0) {
+$cmp = strcmp($server, "school.simption.com");
+$cmp2 = strcmp($server,"192.168.42.66");
+
+if ($cmp != 0 or $cmp2==0) {
     $dbhost = 'localhost:3306';
     $dbuser = 'root';
     $dbpass = '';
@@ -10,7 +12,7 @@ if ($cmp == 0) {
         die('Could not connect: ' . mysql_error());
     }
 //echo 'Connected successfully';
-    mysql_select_db('test');
+    mysql_select_db('school_project');
 } else {
     include("../../connection/connect.php");
 }
