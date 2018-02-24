@@ -12,7 +12,7 @@ if ($cmp != 0 or $cmp2==0) {
         die('Could not connect: ' . mysql_error());
     }
 //echo 'Connected successfully';
-    mysql_select_db('school_project');
+    mysql_select_db('new_school_db');
 } else {
     include("../../connection/connect.php");
 }
